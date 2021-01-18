@@ -1,30 +1,24 @@
 <template>
   <div id="app">
-    <headerV />
-    <toDoList />
+    <mainHeader />
+    <container />
+    <mainFooter />
   </div>
 </template>
 
 <script>
-import toDoList from './components/toDoList.vue'
-import headerV from './components/headerV.vue'
+import mainHeader from './components/mainHeader.vue';
+import container from './components/container.vue';
+import mainFooter from './components/mainFooter.vue';
+
 
 export default {
   name: 'app',
-  data() {
-    return {
-      isActive: true
-    }
-  },
-  components: {
-    headerV,
-    toDoList
-  }
-}
-</script>
 
-<style scoped>
-    body {
-    margin: 0px;
-  }
-</style>
+  components: {
+    mainHeader,
+    container,
+    mainFooter
+  }, 
+};
+</script>;
