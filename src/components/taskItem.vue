@@ -1,7 +1,7 @@
 <template>
     <li>
     <span>
-    <input type="checkbox">
+    <input class="checkbox" type="checkbox">
     {{task.title}}
     </span>
     <button class="btn" v-on:click="$emit('remove-task', task.id)">&times;</button>
@@ -32,6 +32,9 @@ export default {
     }
     span {
         margin-top: 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
     
     .btn {
@@ -47,4 +50,6 @@ export default {
     .btn:hover, .btn:focus {
         outline: none;
     }
+
 </style>
+

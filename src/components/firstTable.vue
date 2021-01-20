@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, explicabo.</p>
+        
     </div>
 </template>
 
@@ -12,6 +12,8 @@ export default {
 
 <style scoped>
     div {
+        display: inline-block;
+        vertical-align: top;
         height: 100%;
         width: 34%;
     }
