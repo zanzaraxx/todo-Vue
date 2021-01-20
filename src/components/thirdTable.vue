@@ -12,6 +12,8 @@ export default {
 
 <style scoped>
     div {
+        display: inline-block;
+        vertical-align: top;
         height: 100%;
         width: 33%;
     }
